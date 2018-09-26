@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:march="http://www.abin.com/schema/march"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.abin.com/schema/march http://www.abin.com/schema/march/march.xsd">
+
+    <march:service id="marchRpc1" interfaceClass="turn1" ref="ternimal" version="1.0.0"/>
+
+    <bean id="marchRpc3" class="com.abin.lee.expand.achieve.factory.util.MarchConfig">
+        <property name="interfaceClass" value="turn3"/>
+        <property name="ref" value="ternimal3"/>
+        <property name="version" value="3.0.0"/>
+    </bean>
+
+</beans>
